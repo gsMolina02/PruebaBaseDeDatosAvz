@@ -1,0 +1,227 @@
+{
+  "clientes": [
+    {
+      "id": "CLI001",
+      "cedula": "1234567890",
+      "nombres": "Juan Pérez García",
+      "email": "juan.perez@email.com",
+      "telefono": "0991234567",
+      "edad": 35,
+      "genero": "M"
+    },
+    {
+      "id": "CLI002",
+      "cedula": "0987654321",
+      "nombres": "María López Sánchez",
+      "email": "maria.lopez@email.com",
+      "telefono": "0987654321",
+      "edad": 28,
+      "genero": "F"
+    },
+    {
+      "id": "CLI003",
+      "cedula": "1122334455",
+      "nombres": "Carlos Rodríguez Méndez",
+      "email": "carlos.rodriguez@email.com",
+      "telefono": "0991112233",
+      "edad": 42,
+      "genero": "M"
+    },
+    {
+      "id": "CLI004",
+      "cedula": "5544332211",
+      "nombres": "Ana Martínez Torres",
+      "email": "ana.martinez@email.com",
+      "telefono": "0987778899",
+      "edad": 31,
+      "genero": "F"
+    },
+    {
+      "id": "CLI005",
+      "cedula": "6677889900",
+      "nombres": "Luis González Ramírez",
+      "email": "luis.gonzalez@email.com",
+      "telefono": "0994445566",
+      "edad": 45,
+      "genero": "M"
+    }
+  ],
+  "productos": [
+    {
+      "id": "PROD001",
+      "codigo": "LAP-HP-001",
+      "nombre": "Laptop HP Pavilion",
+      "categoria": "Computadoras",
+      "precio": 850.00,
+      "stock": 15,
+      "proveedor": "HP",
+      "descripcion": "Laptop HP Core i5, 8GB RAM, 256GB SSD"
+    },
+    {
+      "id": "PROD002",
+      "codigo": "MOU-LOG-002",
+      "nombre": "Mouse Logitech MX Master",
+      "categoria": "Periféricos",
+      "precio": 99.99,
+      "stock": 50,
+      "proveedor": "Logitech",
+      "descripcion": "Mouse inalámbrico ergonómico"
+    },
+    {
+      "id": "PROD003",
+      "codigo": "TEC-COR-003",
+      "nombre": "Teclado Corsair K70",
+      "categoria": "Periféricos",
+      "precio": 159.99,
+      "stock": 30,
+      "proveedor": "Corsair",
+      "descripcion": "Teclado mecánico RGB"
+    },
+    {
+      "id": "PROD004",
+      "codigo": "MON-SAM-004",
+      "nombre": "Monitor Samsung 27\"",
+      "categoria": "Monitores",
+      "precio": 299.99,
+      "stock": 20,
+      "proveedor": "Samsung",
+      "descripcion": "Monitor Full HD IPS"
+    },
+    {
+      "id": "PROD005",
+      "codigo": "AUD-SON-005",
+      "nombre": "Audífonos Sony WH-1000XM4",
+      "categoria": "Audio",
+      "precio": 349.99,
+      "stock": 25,
+      "proveedor": "Sony",
+      "descripcion": "Audífonos con cancelación de ruido"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": "PED001",
+      "codigo": "PED-2026-001",
+      "clienteId": "CLI001",
+      "fecha": "2026-01-15",
+      "subtotal": 850.00,
+      "iva": 102.00,
+      "total": 952.00,
+      "estado": "completado"
+    },
+    {
+      "id": "PED002",
+      "codigo": "PED-2026-002",
+      "clienteId": "CLI002",
+      "fecha": "2026-01-20",
+      "subtotal": 259.98,
+      "iva": 31.20,
+      "total": 291.18,
+      "estado": "pendiente"
+    },
+    {
+      "id": "PED003",
+      "codigo": "PED-2026-003",
+      "clienteId": "CLI003",
+      "fecha": "2026-01-25",
+      "subtotal": 299.99,
+      "iva": 36.00,
+      "total": 335.99,
+      "estado": "completado"
+    },
+    {
+      "id": "PED004",
+      "codigo": "PED-2026-004",
+      "clienteId": "CLI004",
+      "fecha": "2026-02-01",
+      "subtotal": 349.99,
+      "iva": 42.00,
+      "total": 391.99,
+      "estado": "enviado"
+    },
+    {
+      "id": "PED005",
+      "codigo": "PED-2026-005",
+      "clienteId": "CLI005",
+      "fecha": "2026-02-05",
+      "subtotal": 1109.98,
+      "iva": 133.20,
+      "total": 1243.18,
+      "estado": "pendiente"
+    }
+  ],
+  "detalle_pedido": [
+    {
+      "id": "DET001",
+      "codigo": "DET-PED001-001",
+      "pedidoId": "PED001",
+      "productoId": "PROD001",
+      "cantidad": 1,
+      "detalle": "Laptop HP Pavilion",
+      "precioUnit": 850.00
+    },
+    {
+      "id": "DET002",
+      "codigo": "DET-PED002-001",
+      "pedidoId": "PED002",
+      "productoId": "PROD002",
+      "cantidad": 1,
+      "detalle": "Mouse Logitech",
+      "precioUnit": 99.99
+    },
+    {
+      "id": "DET003",
+      "codigo": "DET-PED002-002",
+      "pedidoId": "PED002",
+      "productoId": "PROD003",
+      "cantidad": 1,
+      "detalle": "Teclado Corsair",
+      "precioUnit": 159.99
+    },
+    {
+      "id": "DET004",
+      "codigo": "DET-PED003-001",
+      "pedidoId": "PED003",
+      "productoId": "PROD004",
+      "cantidad": 1,
+      "detalle": "Monitor Samsung",
+      "precioUnit": 299.99
+    },
+    {
+      "id": "DET005",
+      "codigo": "DET-PED004-001",
+      "pedidoId": "PED004",
+      "productoId": "PROD005",
+      "cantidad": 1,
+      "detalle": "Audífonos Sony",
+      "precioUnit": 349.99
+    },
+    {
+      "id": "DET006",
+      "codigo": "DET-PED005-001",
+      "pedidoId": "PED005",
+      "productoId": "PROD001",
+      "cantidad": 1,
+      "detalle": "Laptop HP",
+      "precioUnit": 850.00
+    },
+    {
+      "id": "DET007",
+      "codigo": "DET-PED005-002",
+      "pedidoId": "PED005",
+      "productoId": "PROD002",
+      "cantidad": 2,
+      "detalle": "Mouse Logitech x2",
+      "precioUnit": 99.99
+    },
+    {
+      "id": "DET008",
+      "codigo": "DET-PED005-003",
+      "pedidoId": "PED005",
+      "productoId": "PROD003",
+      "cantidad": 1,
+      "detalle": "Teclado Corsair",
+      "precioUnit": 159.99
+    }
+  ]
+}
